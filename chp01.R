@@ -28,3 +28,6 @@ mynums[1]
 mynums[2]
 mynums[1:4]
 mynums[-2]
+mynums > 3
+mylog <- mynums >= 3
+mynums[mylog]
