@@ -1,0 +1,31 @@
+---
+title: "posterdown_demo"
+output: posterdown::posterdown_html
+
+---
+<!---output: posterdown::posterdown_html--->
+<!--- output: posterdown::posterdown_betterland --->
+<!--- output: posterdown::posterdown_betterport --->
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# First Level header
+
+## Second Level Header
+
+### Third Level Header
+
+This is _italic text_ this is **bold text** and this is ~~strucktrough text~~
+
+Put a link [here](http://www.rstudio.com).
+
+```{r warning=FALSE, error=FALSE, message=FALSE, echo=FALSE}
+print(pi)
+```
+
+Display as `code`
+
+Today's date is `r Sys.Date()`
+

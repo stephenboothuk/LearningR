@@ -1,0 +1,32 @@
+---
+title: "Bhamr2"
+output: html_document
+
+params:
+  my_date: "2020/02/26"
+  
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# First Level header
+
+## Second Level Header
+
+### Third Level Header
+
+This is _italic text_ this is **bold text** and this is ~~strucktrough text~~
+
+Put a link [here](http://www.rstudio.com).
+
+```{r warning=FALSE, error=FALSE, message=FALSE, echo=FALSE}
+print(pi)
+```
+
+Display as `code`
+
+Today's date is `r Sys.Date()`
+
+my_date is `r params$my_date`

@@ -31,3 +31,17 @@ mynums[-2]
 mynums > 3
 mylog <- mynums >= 3
 mynums[mylog]
+
+gender <- c('F', 'M', 'M', 'F', 'F')
+gender
+class(gender)
+gender <- as.factor(gender)
+gender
+gender[3] <- 'not declared'
+gender
+levels(gender)
+levels(gender) <- c('F', 'M', 'not declared')
+gender[gender == 'F']
+names <- c('sue', 'eric', 'bob', 'erika', 'tammy')
+names[gender[gender == 'F']]
+names[gender == 'F']
